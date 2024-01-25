@@ -1,0 +1,840 @@
+[
+    {
+        "model": "BernoulliNB",
+        "parametre": [
+            {
+                "name": "alpha",
+                "describe": "float or array-like of shape (n_features,),default=1.0",
+                "type": "float or array-like",
+                "default_val": 1
+            },
+            {
+                "name": "force_alpha",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "binarize",
+                "describe": "float or None,default=0.0",
+                "type": "float",
+                "default_val": 0
+            },
+            {
+                "name": "fit_prior",
+                "describe": "bool,default=True",
+                "type": "bool",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "class_prior",
+                "describe": "array-like of shape (n_classes,),default=None",
+                "type": "array-like",
+                "default_val": "NULL"
+            }
+        ],
+        "param_grid": {
+            "alpha": "0.0,0.1,0.5,1.0,5.0,10.0",
+            "force_alpha": "True",
+            "binarize": "None,0.0,8.5,10.0",
+            "fit_prior": "True,False"
+        }
+    },
+    {
+        "model": "CategoricalNB",
+        "parametre": [
+            {
+                "name": "alpha",
+                "describe": "float or array-like of shape (n_features,),default=1.0",
+                "type": "float or array-like",
+                "default_val": 1
+            },
+            {
+                "name": "force_alpha",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "fit_prior",
+                "describe": "bool,default=True",
+                "type": "bool",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "class_prior",
+                "describe": "array-like of shape (n_classes,),default=None",
+                "type": "array-like",
+                "default_val": "NULL"
+            },
+            {
+                "name": "min_categories",
+                "describe": "int or array-like of shape (n_features,),default=None",
+                "type": "int or array-like",
+                "default_val": "NULL"
+            }
+        ],
+        "param_grid": {
+            "alpha": "0.0,0.1,0.5,1.0,5.0,10.0",
+            "force_alpha": "True",
+            "fit_prior": "True,False",
+            "min_categories": "18,25,30"
+        }
+    },
+    {
+        "model": "ComplementNB",
+        "parametre": [
+            {
+                "name": "alpha",
+                "describe": "float or array-like of shape (n_features,),default=1.0",
+                "type": "float or array-like",
+                "default_val": 1
+            },
+            {
+                "name": "force_alpha",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "fit_prior",
+                "describe": "bool,default=True",
+                "type": "bool",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "class_prior",
+                "describe": "array-like of shape (n_classes,),default=None",
+                "type": "array-like",
+                "default_val": "NULL"
+            },
+            {
+                "name": "norm",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            }
+        ],
+        "param_grid": {
+            "alpha": "0.0,0.1,0.5,1.0,5.0,10.0",
+            "force_alpha": "True",
+            "fit_prior": "True,False",
+            "norm": "True,False"
+        }
+    },
+    {
+        "model": "GaussianNB",
+        "parametre": [
+            {
+                "name": "priors",
+                "describe": "array-like of shape (n_classes,),default=None",
+                "type": "array-like",
+                "default_val": "NULL"
+            },
+            {
+                "name": "var_smoothing",
+                "describe": "float,default=0.000000001",
+                "type": "float",
+                "default_val": 1e-9
+            }
+        ],
+        "param_grid": {
+            "var_smoothing": "1e-9,1e-6,1e-12"
+        }
+    },
+    {
+        "model": "MultinomialNB",
+        "parametre": [
+            {
+                "name": "alpha",
+                "describe": "float or array-like of shape (n_features,),default=1.0",
+                "type": "float or array-like",
+                "default_val": 1
+            },
+            {
+                "name": "force_alpha",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "fit_prior",
+                "describe": "bool,default=True",
+                "type": "bool",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "class_prior",
+                "describe": "array-like of shape (n_classes,),default=None",
+                "type": "array-like",
+                "default_val": "NULL"
+            }
+        ],
+        "param_grid": {
+            "alpha": "0.0,0.1,0.5,1.0,5.0,10.0",
+            "force_alpha": "True",
+            "fit_prior": "True,False"
+        }
+    },
+    {
+        "model": "SVC",
+        "parametre": [
+            {
+                "name": "C",
+                "describe": "float,default=1.0",
+                "type": "float",
+                "default_val": 1
+            },
+            {
+                "name": "kernel",
+                "describe": "{linear,poly,rbf,sigmoid,precomputed} or callable,default=rbf",
+                "type": "str or callable",
+                "default_val": "rbf"
+            },
+            {
+                "name": "degree",
+                "describe": "int,default=3",
+                "type": "int",
+                "default_val": 3
+            },
+            {
+                "name": "gamma",
+                "describe": "{scale,auto} or float,default=scale",
+                "type": "float or str",
+                "default_val": "scale"
+            },
+            {
+                "name": "coef0",
+                "describe": "float,default=0.0",
+                "type": "float",
+                "default_val": 0
+            },
+            {
+                "name": "shrinking",
+                "describe": "bool,default=True",
+                "type": "bool",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "probability",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "tol",
+                "describe": "float,default=0.001",
+                "type": "float",
+                "default_val": 0.001
+            },
+            {
+                "name": "cache_size",
+                "describe": "float,default=200",
+                "type": "float",
+                "default_val": 200
+            },
+            {
+                "name": "class_weight",
+                "describe": "dict or balanced,default=None",
+                "type": "dict or str",
+                "default_val": "NULL"
+            },
+            {
+                "name": "verbose",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "max_iter",
+                "describe": "int,default=-1",
+                "type": "int",
+                "default_val": -1
+            },
+            {
+                "name": "decision_function_shape",
+                "describe": "{ovo,ovr},default=ovr",
+                "type": "str",
+                "default_val": "ovr"
+            },
+            {
+                "name": "break_ties",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "random_state",
+                "describe": "int,RandomState instance or None,default=None",
+                "type": "int",
+                "default_val": "NULL"
+            }
+        ],
+        "param_grid": {
+            "C": "0.1,0.5,1.0,5.0,10.0",
+            "kernel": "linear,poly,rbf",
+            "degree": "1,2,3,4,5",
+            "gamma": "auto,scale",
+			"probability" : "TRUE",
+            "max_iter": "10,100,1000,10000",
+            "random_state": "None,2,4,6,8,10"
+        }
+    },
+    {
+        "model": "SVR",
+        "parametre": [
+            {
+                "name": "kernel",
+                "describe": "{linear,poly,rbf,sigmoid,precomputed} or callable,default=rbf",
+                "type": "str or callable",
+                "default_val": "rbf"
+            },
+            {
+                "name": "degree",
+                "describe": "int,default=3",
+                "type": "int",
+                "default_val": 3
+            },
+            {
+                "name": "gamma",
+                "describe": "{scale,auto} or float,default=scale",
+                "type": "float or str",
+                "default_val": "scale"
+            },
+            {
+                "name": "coef0",
+                "describe": "float,default=0.0",
+                "type": "float",
+                "default_val": 0
+            },
+            {
+                "name": "tol",
+                "describe": "float,default=0.001",
+                "type": "float",
+                "default_val": 0.001
+            },
+            {
+                "name": "C",
+                "describe": "float,default=1.0",
+                "type": "float",
+                "default_val": 1
+            },
+            {
+                "name": "epsilon",
+                "describe": "float,default=0.1",
+                "type": "float",
+                "default_val": 0.1
+            },
+            {
+                "name": "shrinking",
+                "describe": "bool,default=True",
+                "type": "bool",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "cache_size",
+                "describe": "float,default=200",
+                "type": "float",
+                "default_val": 200
+            },
+            {
+                "name": "verbose",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "max_iter",
+                "describe": "int,default=-1",
+                "type": "int",
+                "default_val": -1
+            }
+        ],
+        "param_grid": {
+            "kernel": "linear,poly,rbf",
+            "degree": "1,2,3,4,5",
+            "gamma": "auto,scale",
+            "C": "0.1,0.5,1.0,5.0,10.0",
+            "epsilon": "0.00001,0.0001,0.001,0.01,1.0,10.0",
+            "max_iter": "10,100,1000,10000"
+        }
+    },
+    {
+        "model": "LinearSVC",
+        "parametre": [
+            {
+                "name": "penalty",
+                "describe": "{l1,l2},default=l2",
+                "type": "str",
+                "default_val": "l2"
+            },
+            {
+                "name": "loss",
+                "describe": "{hinge,squared_hinge},default=squared_hinge",
+                "type": "str",
+                "default_val": "squared_hinge"
+            },
+            {
+                "name": "dual",
+                "describe": "“auto” or bool,default=True",
+                "type": "bool or str",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "tol",
+                "describe": "float,default=0.0001",
+                "type": "float",
+                "default_val": 0.0001
+            },
+            {
+                "name": "C",
+                "describe": "float,default=1.0",
+                "type": "float",
+                "default_val": 1
+            },
+            {
+                "name": "multi_class",
+                "describe": "{ovr,crammer_singer},default=ovr",
+                "type": "str",
+                "default_val": "ovr"
+            },
+            {
+                "name": "fit_intercept",
+                "describe": "bool,default=True",
+                "type": "bool",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "intercept_scaling",
+                "describe": "float,default=1.0",
+                "type": "float",
+                "default_val": 1
+            },
+            {
+                "name": "class_weight",
+                "describe": "dict or balanced,default=None",
+                "type": "dict or str",
+                "default_val": "NULL"
+            },
+            {
+                "name": "verbose",
+                "describe": "int,default=0",
+                "type": "int",
+                "default_val": 0
+            },
+            {
+                "name": "random_state",
+                "describe": "int,RandomState instance or None,default=None",
+                "type": "int",
+                "default_val": "NULL"
+            },
+            {
+                "name": "max_iter",
+                "describe": "int,default=1000",
+                "type": "int",
+                "default_val": 1000
+            }
+        ],
+        "param_grid": {
+            "penalty": "l1,l2",
+            "loss": "hinge,squared_hinge",
+            "dual": "auto,True,False",
+            "C": "0.1,0.5,1.0,5.0,10.0",
+            "multi_class": "ovr,crammer_singer",
+            "random_state": "None,2,4,6,8,10",
+            "max_iter": "10,100,1000,10000"
+        }
+    },
+    {
+        "model": "LinearSVR",
+        "parametre": [
+            {
+                "name": "epsilon",
+                "describe": "float,default=0.0",
+                "type": "float",
+                "default_val": 0
+            },
+            {
+                "name": "tol",
+                "describe": "float,default=0.0001",
+                "type": "float",
+                "default_val": 0.0001
+            },
+            {
+                "name": "C",
+                "describe": "float,default=1.0",
+                "type": "float",
+                "default_val": 1
+            },
+            {
+                "name": "loss",
+                "describe": "{‘epsilon_insensitive’, ‘squared_epsilon_insensitive’},default='epsilon_insensitive’",
+                "type": "str",
+                "default_val": "squared_hinge"
+            },
+            {
+                "name": "fit_intercept",
+                "describe": "bool,default=True",
+                "type": "bool",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "intercept_scaling",
+                "describe": "float,default=1.0",
+                "type": "float",
+                "default_val": 1
+            },
+            {
+                "name": "dual",
+                "describe": "“auto” or bool,default=True",
+                "type": "bool or str",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "verbose",
+                "describe": "int,default=0",
+                "type": "int",
+                "default_val": 0
+            },
+            {
+                "name": "random_state",
+                "describe": "int,RandomState instance or None,default=None",
+                "type": "int",
+                "default_val": "NULL"
+            },
+            {
+                "name": "max_iter",
+                "describe": "int,default=1000",
+                "type": "int",
+                "default_val": 1000
+            }
+        ],
+        "param_grid": {
+            "epsilon": "0.001,0.01,0,1.0,10.0,100.0",
+            "C": "0.1,0.5,1.0,5.0,10.0",
+            "loss": "epsilon_insensitive,squared_epsilon_insensitive",
+            "dual": "auto,True,False",
+            "random_state": "None,2,4,6,8,10",
+            "max_iter": "10,100,1000,10000"
+        }
+    },
+    {
+        "model": "NuSVC",
+        "parametre": [
+            {
+                "name": "nu",
+                "describe": "float,default=0.5",
+                "type": "float",
+                "default_val": 0.5
+            },
+            {
+                "name": "kernel",
+                "describe": "{linear,poly,rbf,sigmoid,precomputed} or callable,default=rbf",
+                "type": "str or callable",
+                "default_val": "rbf"
+            },
+            {
+                "name": "degree",
+                "describe": "int,default=3",
+                "type": "int",
+                "default_val": 3
+            },
+            {
+                "name": "gamma",
+                "describe": "{scale,auto} or float,default=scale",
+                "type": "float or str",
+                "default_val": "scale"
+            },
+            {
+                "name": "coef0",
+                "describe": "float,default=0.0",
+                "type": "float",
+                "default_val": 0
+            },
+            {
+                "name": "shrinking",
+                "describe": "bool,default=True",
+                "type": "bool",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "tol",
+                "describe": "float,default=0.001",
+                "type": "float",
+                "default_val": 0.001
+            },
+            {
+                "name": "cache_size",
+                "describe": "float,default=200",
+                "type": "float",
+                "default_val": 200
+            },
+            {
+                "name": "class_weight",
+                "describe": "{dict,‘balanced’},default=None",
+                "type": "dict or str",
+                "default_val": "NULL"
+            },
+            {
+                "name": "verbose",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "max_iter",
+                "describe": "int,default=-1",
+                "type": "int",
+                "default_val": -1
+            },
+            {
+                "name": "decision_function_shape",
+                "describe": "{ovo,ovr},default=ovr",
+                "type": "str",
+                "default_val": "ovr"
+            },
+            {
+                "name": "break_ties",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "random_state",
+                "describe": "int,RandomState instance or None,default=None",
+                "type": "int",
+                "default_val": "NULL"
+            }
+        ],
+        "param_grid": {
+            "nu": "0.0,0.001,0.01,0.1,1.0",
+            "kernel": "linear,poly,rbf",
+            "degree": "1,2,3,4,5",
+            "gamma": "auto,scale",
+            "max_iter": "10,100,1000,10000",
+            "random_state": "None,2,4,6,8,10"
+        }
+    },
+    {
+        "model": "NuSVR",
+        "parametre": [
+            {
+                "name": "nu",
+                "describe": "float,default=0.5",
+                "type": "float",
+                "default_val": 0.5
+            },
+            {
+                "name": "C",
+                "describe": "float,default=1.0",
+                "type": "float",
+                "default_val": 1
+            },
+            {
+                "name": "kernel",
+                "describe": "{linear,poly,rbf,sigmoid,precomputed} or callable,default=rbf",
+                "type": "str or callable",
+                "default_val": "rbf"
+            },
+            {
+                "name": "degree",
+                "describe": "int,default=3",
+                "type": "int",
+                "default_val": 3
+            },
+            {
+                "name": "gamma",
+                "describe": "{scale,auto} or float,default=scale",
+                "type": "float or str",
+                "default_val": "scale"
+            },
+            {
+                "name": "coef0",
+                "describe": "float,default=0.0",
+                "type": "float",
+                "default_val": 0
+            },
+            {
+                "name": "shrinking",
+                "describe": "bool,default=True",
+                "type": "bool",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "tol",
+                "describe": "float,default=0.001",
+                "type": "float",
+                "default_val": 0.001
+            },
+            {
+                "name": "cache_size",
+                "describe": "float,default=200",
+                "type": "float",
+                "default_val": 200
+            },
+            {
+                "name": "verbose",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "max_iter",
+                "describe": "int,default=-1",
+                "type": "int",
+                "default_val": -1
+            }
+        ],
+        "param_grid": {
+            "nu": "0.0,0.001,0.01,0.1,1.0",
+            "C": "0.1,0.5,1.0,5.0,10.0",
+            "kernel": "linear,poly,rbf",
+            "degree": "1,2,3,4,5",
+            "gamma": "auto,scale",
+            "max_iter": "10,100,1000,10000"
+        }
+    },
+    {
+        "model": "OneClassSVM",
+        "parametre": [
+            {
+                "name": "kernel",
+                "describe": "{linear,poly,rbf,sigmoid,precomputed} or callable,default=rbf",
+                "type": "str or callable",
+                "default_val": "rbf"
+            },
+            {
+                "name": "degree",
+                "describe": "int,default=3",
+                "type": "int",
+                "default_val": 3
+            },
+            {
+                "name": "gamma",
+                "describe": "{scale,auto} or float,default=scale",
+                "type": "float or str",
+                "default_val": "scale"
+            },
+            {
+                "name": "coef0",
+                "describe": "float,default=0.0",
+                "type": "float",
+                "default_val": 0
+            },
+            {
+                "name": "tol",
+                "describe": "float,default=0.001",
+                "type": "float",
+                "default_val": 0.001
+            },
+            {
+                "name": "nu",
+                "describe": "float,default=0.5",
+                "type": "float",
+                "default_val": 0.5
+            },
+            {
+                "name": "shrinking",
+                "describe": "bool,default=True",
+                "type": "bool",
+                "default_val": "TRUE"
+            },
+            {
+                "name": "cache_size",
+                "describe": "float,default=200",
+                "type": "float",
+                "default_val": 200
+            },
+            {
+                "name": "verbose",
+                "describe": "bool,default=False",
+                "type": "bool",
+                "default_val": "FALSE"
+            },
+            {
+                "name": "max_iter",
+                "describe": "int,default=-1",
+                "type": "int",
+                "default_val": -1
+            }
+        ],
+        "param_grid": {
+            "kernel": "linear,poly,rbf",
+            "degree": "1,2,3,4,5",
+            "gamma": "auto,scale",
+            "nu": "0.0,0.001,0.01,0.1,1.0",
+            "max_iter": "10,100,1000,10000"
+        }
+    },
+    {
+        "model": "KNeighborsClassifier",
+        "parametre": [
+            {
+                "name": "n_neighbors",
+                "describe": "int, default=5",
+                "type": "int",
+                "default_val": 5
+            },
+            {
+                "name": "weights",
+                "describe": "{'uniform', 'distance'}, callable or None, default='uniform'",
+                "type": "str",
+                "default_val": "uniform"
+            },
+            {
+                "name": "algorithm",
+                "describe": "{‘auto’, ‘ball_tree’, ‘kd_tree’, ‘brute’}, default=’auto’",
+                "type": "str",
+                "default_val": "auto"
+            },
+            {
+                "name": "leaf_size",
+                "describe": "int, default=30",
+                "type": "int",
+                "default_val": 30
+            },
+            {
+                "name": "p",
+                "describe": "float, default=2",
+                "type": "float",
+                "default_val": 2
+            },
+            {
+                "name": "metric",
+                "describe": "str or callable, default=’minkowski’",
+                "type": "str",
+                "default_val": "minkowski"
+            },
+            {
+                "name": "metric_params",
+                "describe": "dict, default=None",
+                "type": "str",
+                "default_val": "None"
+            },
+            {
+                "name": "n_jobs",
+                "describe": "int, default=None",
+                "type": "int",
+                "default_val": "None"
+            }
+        ],
+        "param_grid": {
+            "n_neighbors": "1,2,3,4,5,6,7,8,9,10",
+            "weights": "uniform,distance",
+            "algorithm": "auto,ball_tree,kd_tree,brute",
+            "leaf_size": "0,10,20,30,40,50,60"
+        }
+    },
+    {
+        "model": "",
+        "parametre": [
+            {
+                "name": "",
+                "describe": "",
+                "type": "",
+                "default_val": ""
+            }
+        ],
+        "param_grid": {}
+    }
+]
