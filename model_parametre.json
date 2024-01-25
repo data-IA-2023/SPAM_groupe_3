@@ -10,9 +10,9 @@
             },
             {
                 "name": "force_alpha",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "binarize",
@@ -22,22 +22,22 @@
             },
             {
                 "name": "fit_prior",
-                "describe": "bool,default=True",
+                "describe": "bool,default=true",
                 "type": "bool",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "class_prior",
                 "describe": "array-like of shape (n_classes,),default=None",
                 "type": "array-like",
-                "default_val": "NULL"
+                "default_val": null
             }
         ],
         "param_grid": {
             "alpha": "0.0,0.1,0.5,1.0,5.0,10.0",
-            "force_alpha": "True",
+            "force_alpha": true,
             "binarize": "None,0.0,8.5,10.0",
-            "fit_prior": "True,False"
+            "fit_prior": "true,false"
         }
     },
     {
@@ -51,33 +51,33 @@
             },
             {
                 "name": "force_alpha",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "fit_prior",
-                "describe": "bool,default=True",
+                "describe": "bool,default=true",
                 "type": "bool",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "class_prior",
                 "describe": "array-like of shape (n_classes,),default=None",
                 "type": "array-like",
-                "default_val": "NULL"
+                "default_val": null
             },
             {
                 "name": "min_categories",
                 "describe": "int or array-like of shape (n_features,),default=None",
                 "type": "int or array-like",
-                "default_val": "NULL"
+                "default_val": null
             }
         ],
         "param_grid": {
             "alpha": "0.0,0.1,0.5,1.0,5.0,10.0",
-            "force_alpha": "True",
-            "fit_prior": "True,False",
+            "force_alpha": true,
+            "fit_prior": "true,false",
             "min_categories": "18,25,30"
         }
     },
@@ -92,34 +92,34 @@
             },
             {
                 "name": "force_alpha",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "fit_prior",
-                "describe": "bool,default=True",
+                "describe": "bool,default=true",
                 "type": "bool",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "class_prior",
                 "describe": "array-like of shape (n_classes,),default=None",
                 "type": "array-like",
-                "default_val": "NULL"
+                "default_val": null
             },
             {
                 "name": "norm",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             }
         ],
         "param_grid": {
             "alpha": "0.0,0.1,0.5,1.0,5.0,10.0",
-            "force_alpha": "True",
-            "fit_prior": "True,False",
-            "norm": "True,False"
+            "force_alpha": true,
+            "fit_prior": "true,false",
+            "norm": "true,false"
         }
     },
     {
@@ -129,7 +129,7 @@
                 "name": "priors",
                 "describe": "array-like of shape (n_classes,),default=None",
                 "type": "array-like",
-                "default_val": "NULL"
+                "default_val": null
             },
             {
                 "name": "var_smoothing",
@@ -153,27 +153,27 @@
             },
             {
                 "name": "force_alpha",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "fit_prior",
-                "describe": "bool,default=True",
+                "describe": "bool,default=true",
                 "type": "bool",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "class_prior",
                 "describe": "array-like of shape (n_classes,),default=None",
                 "type": "array-like",
-                "default_val": "NULL"
+                "default_val": null
             }
         ],
         "param_grid": {
             "alpha": "0.0,0.1,0.5,1.0,5.0,10.0",
-            "force_alpha": "True",
-            "fit_prior": "True,False"
+            "force_alpha": true,
+            "fit_prior": "true,false"
         }
     },
     {
@@ -211,15 +211,15 @@
             },
             {
                 "name": "shrinking",
-                "describe": "bool,default=True",
+                "describe": "bool,default=true",
                 "type": "bool",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "probability",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "tol",
@@ -237,13 +237,13 @@
                 "name": "class_weight",
                 "describe": "dict or balanced,default=None",
                 "type": "dict or str",
-                "default_val": "NULL"
+                "default_val": null
             },
             {
                 "name": "verbose",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "max_iter",
@@ -259,15 +259,15 @@
             },
             {
                 "name": "break_ties",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "random_state",
                 "describe": "int,RandomState instance or None,default=None",
                 "type": "int",
-                "default_val": "NULL"
+                "default_val": null
             }
         ],
         "param_grid": {
@@ -275,7 +275,7 @@
             "kernel": "linear,poly,rbf",
             "degree": "1,2,3,4,5",
             "gamma": "auto,scale",
-			"probability" : "TRUE",
+			"probability" : true,
             "max_iter": "10,100,1000,10000",
             "random_state": "0"
         }
@@ -327,9 +327,9 @@
             },
             {
                 "name": "shrinking",
-                "describe": "bool,default=True",
+                "describe": "bool,default=true",
                 "type": "bool",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "cache_size",
@@ -339,9 +339,9 @@
             },
             {
                 "name": "verbose",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "max_iter",
@@ -376,9 +376,9 @@
             },
             {
                 "name": "dual",
-                "describe": "“auto” or bool,default=True",
+                "describe": "“auto” or bool,default=true",
                 "type": "bool or str",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "tol",
@@ -400,9 +400,9 @@
             },
             {
                 "name": "fit_intercept",
-                "describe": "bool,default=True",
+                "describe": "bool,default=true",
                 "type": "bool",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "intercept_scaling",
@@ -414,7 +414,7 @@
                 "name": "class_weight",
                 "describe": "dict or balanced,default=None",
                 "type": "dict or str",
-                "default_val": "NULL"
+                "default_val": null
             },
             {
                 "name": "verbose",
@@ -426,7 +426,7 @@
                 "name": "random_state",
                 "describe": "int,RandomState instance or None,default=None",
                 "type": "int",
-                "default_val": "NULL"
+                "default_val": null
             },
             {
                 "name": "max_iter",
@@ -438,7 +438,7 @@
         "param_grid": {
             "penalty": "l1,l2",
             "loss": "hinge,squared_hinge",
-            "dual": "auto,True,False",
+            "dual": "auto,true,false",
             "C": "0.1,0.5,1.0,5.0,10.0",
             "multi_class": "ovr,crammer_singer",
             "random_state": "0",
@@ -468,15 +468,15 @@
             },
             {
                 "name": "loss",
-                "describe": "{‘epsilon_insensitive’, ‘squared_epsilon_insensitive’},default='epsilon_insensitive’",
+                "describe": "{epsilon_insensitive, squared_epsilon_insensitive},default=epsilon_insensitive",
                 "type": "str",
                 "default_val": "squared_hinge"
             },
             {
                 "name": "fit_intercept",
-                "describe": "bool,default=True",
+                "describe": "bool,default=true",
                 "type": "bool",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "intercept_scaling",
@@ -486,9 +486,9 @@
             },
             {
                 "name": "dual",
-                "describe": "“auto” or bool,default=True",
+                "describe": "“auto” or bool,default=true",
                 "type": "bool or str",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "verbose",
@@ -500,7 +500,7 @@
                 "name": "random_state",
                 "describe": "int,RandomState instance or None,default=None",
                 "type": "int",
-                "default_val": "NULL"
+                "default_val": null
             },
             {
                 "name": "max_iter",
@@ -513,7 +513,7 @@
             "epsilon": "0.001,0.01,0,1.0,10.0,100.0",
             "C": "0.1,0.5,1.0,5.0,10.0",
             "loss": "epsilon_insensitive,squared_epsilon_insensitive",
-            "dual": "auto,True,False",
+            "dual": "auto,true,false",
             "max_iter": "10,100,1000,10000",
 			"random_state": "0"
         }
@@ -553,9 +553,9 @@
             },
             {
                 "name": "shrinking",
-                "describe": "bool,default=True",
+                "describe": "bool,default=true",
                 "type": "bool",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "tol",
@@ -571,15 +571,15 @@
             },
             {
                 "name": "class_weight",
-                "describe": "{dict,‘balanced’},default=None",
+                "describe": "{dict,balanced},default=None",
                 "type": "dict or str",
-                "default_val": "NULL"
+                "default_val": null
             },
             {
                 "name": "verbose",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "max_iter",
@@ -595,15 +595,15 @@
             },
             {
                 "name": "break_ties",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "random_state",
                 "describe": "int,RandomState instance or None,default=None",
                 "type": "int",
-                "default_val": "NULL"
+                "default_val": null
             }
         ],
         "param_grid": {
@@ -656,9 +656,9 @@
             },
             {
                 "name": "shrinking",
-                "describe": "bool,default=True",
+                "describe": "bool,default=true",
                 "type": "bool",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "tol",
@@ -674,9 +674,9 @@
             },
             {
                 "name": "verbose",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "max_iter",
@@ -735,9 +735,9 @@
             },
             {
                 "name": "shrinking",
-                "describe": "bool,default=True",
+                "describe": "bool,default=true",
                 "type": "bool",
-                "default_val": "TRUE"
+                "default_val": true
             },
             {
                 "name": "cache_size",
@@ -747,9 +747,9 @@
             },
             {
                 "name": "verbose",
-                "describe": "bool,default=False",
+                "describe": "bool,default=false",
                 "type": "bool",
-                "default_val": "FALSE"
+                "default_val": false
             },
             {
                 "name": "max_iter",
@@ -777,13 +777,13 @@
             },
             {
                 "name": "weights",
-                "describe": "{'uniform', 'distance'}, callable or None, default='uniform'",
+                "describe": "{uniform, distance}, callable or None, default=uniform",
                 "type": "str",
                 "default_val": "uniform"
             },
             {
                 "name": "algorithm",
-                "describe": "{‘auto’, ‘ball_tree’, ‘kd_tree’, ‘brute’}, default=’auto’",
+                "describe": "{auto, ball_tree, kd_tree, brute}, default=auto",
                 "type": "str",
                 "default_val": "auto"
             },
@@ -801,7 +801,7 @@
             },
             {
                 "name": "metric",
-                "describe": "str or callable, default=’minkowski’",
+                "describe": "str or callable, default=minkowski",
                 "type": "str",
                 "default_val": "minkowski"
             },
@@ -809,13 +809,13 @@
                 "name": "metric_params",
                 "describe": "dict, default=None",
                 "type": "str",
-                "default_val": "None"
+                "default_val": null
             },
             {
                 "name": "n_jobs",
                 "describe": "int, default=None",
                 "type": "int",
-                "default_val": "None"
+                "default_val": null
             }
         ],
         "param_grid": {
