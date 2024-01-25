@@ -277,7 +277,7 @@
             "gamma": "auto,scale",
 			"probability" : "TRUE",
             "max_iter": "10,100,1000,10000",
-            "random_state": "None,2,4,6,8,10"
+            "random_state": "0"
         }
     },
     {
@@ -441,7 +441,7 @@
             "dual": "auto,True,False",
             "C": "0.1,0.5,1.0,5.0,10.0",
             "multi_class": "ovr,crammer_singer",
-            "random_state": "None,2,4,6,8,10",
+            "random_state": "0",
             "max_iter": "10,100,1000,10000"
         }
     },
@@ -514,8 +514,8 @@
             "C": "0.1,0.5,1.0,5.0,10.0",
             "loss": "epsilon_insensitive,squared_epsilon_insensitive",
             "dual": "auto,True,False",
-            "random_state": "None,2,4,6,8,10",
-            "max_iter": "10,100,1000,10000"
+            "max_iter": "10,100,1000,10000",
+			"random_state": "0"
         }
     },
     {
@@ -612,7 +612,7 @@
             "degree": "1,2,3,4,5",
             "gamma": "auto,scale",
             "max_iter": "10,100,1000,10000",
-            "random_state": "None,2,4,6,8,10"
+			"random_state": "0"
         }
     },
     {
