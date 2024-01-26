@@ -17,6 +17,7 @@ import matplotlib.pyplot as plt
 repertoir_fichier = os.path.dirname(__file__)
 path_json = f"{repertoir_fichier}\\model_parametre.json"
 path_best_model = f"{repertoir_fichier}\\best_model.csv"
+path_csv = f'{repertoir_fichier}'
 
 ####
 # traitement des boutons et variable de session
@@ -274,17 +275,7 @@ if st.session_state.stage >= 2 and st.session_state.stage < 3 :
     
     # appel de la classe model avec df_spam et model_commande
     model_spam = model_IA(df_spam, model, test=False)
-    #model_spam = model_spam.entrainement_test()
-    score = model_spam.score
-    x_train = model_spam.x_train 
-    y_train = model_spam.y_train 
-    x_test = model_spam.x_test 
-    y_test = model_spam.y_test
-    y_pred = model_spam.y_pred
-    confusion_matrix_result = model_spam.confusion_matrix
-    N_value = model_spam.N
-    train_score = model_spam.train_score 
-    val_score = model_spam.val_score 
+    model_pip, x_train, x_test, y_train, y_test, y_pred, score, confusion_matrix_result, N_value, train_score, val_score = model_spam.entrainement_test()
 
     ####
     # print graphe
@@ -322,17 +313,7 @@ if st.session_state.stage >= 3:
     
     # appel de la classe model avec df_spam et model_commande
     model_spam = model_IA(df_spam, model, test=False)
-    #model_spam = model_spam.entrainement_test()
-    score = model_spam.score
-    x_train = model_spam.x_train 
-    y_train = model_spam.y_train 
-    x_test = model_spam.x_test 
-    y_test = model_spam.y_test
-    y_pred = model_spam.y_pred
-    confusion_matrix_result = model_spam.confusion_matrix
-    N_value = model_spam.N
-    train_score = model_spam.train_score 
-    val_score = model_spam.val_score
+    model_pip, x_train, x_test, y_train, y_test, y_pred, score, confusion_matrix_result, N_value, train_score, val_score = model_spam.entrainement_test()
 
     ####
     # print graphe 
@@ -366,17 +347,6 @@ if st.session_state.clicked :
         
         if st.session_state.stage >= 2 and st.session_state.stage < 3 :
             st.header("Résultat du modèle choisi avec les nouvelles données :")
-
-            score = model_spam.score
-            x_train = model_spam.x_train 
-            y_train = model_spam.y_train 
-            x_test = model_spam.x_test 
-            y_test = model_spam.y_test
-            y_pred = model_spam.y_pred
-            confusion_matrix_result = model_spam.confusion_matrix
-            N_value = model_spam.N
-            train_score = model_spam.train_score 
-            val_score = model_spam.val_score
             
             new_x_test, new_y_test, new_y_pred, new_score, new_confusion_matrix, new_N, new_train_score, new_val_score = model_spam.test_new_csv(df_new_fichier)
 
@@ -404,17 +374,6 @@ if st.session_state.clicked :
 
         if st.session_state.stage >= 3:
             st.header("Résultat du modèle idéal avec les nouvelles données :")
-
-            score = model_spam.score
-            x_train = model_spam.x_train 
-            y_train = model_spam.y_train 
-            x_test = model_spam.x_test 
-            y_test = model_spam.y_test
-            y_pred = model_spam.y_pred
-            confusion_matrix_result = model_spam.confusion_matrix
-            N_value = model_spam.N
-            train_score = model_spam.train_score 
-            val_score = model_spam.val_score
             
             new_x_test, new_y_test, new_y_pred, new_score, new_confusion_matrix, new_N, new_train_score, new_val_score = model_spam.test_new_csv(df_new_fichier)
 
@@ -469,4 +428,4 @@ if st.session_state.selected :
     # bouton pour valider le fichier csv
     #st.button('lancer à nouveau la recherche')
     if st.button('lancer à nouveau la recherche') :
-        model_best(df_json, df_spam)
+        model_best(df_json, df_spam, path_csv)

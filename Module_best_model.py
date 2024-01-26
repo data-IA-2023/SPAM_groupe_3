@@ -9,10 +9,10 @@ from sklearn.model_selection import GridSearchCV
 class model_best :
 
     # Constructeur, avec aucun argument
-    def __init__(self, df_json, df_spam):
+    def __init__(self, df_json, df_spam, path_csv):
         #ouverture des fichier
         self.df_json = df_json
-        self.path_csv = "module_spam/best_model.csv"
+        self.path_csv = f'{path_csv}\\best_model.csv'
         self.df = df_spam
         
         # liste des modèles
